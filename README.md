@@ -18,7 +18,7 @@ The project allows users to create, browse, and manage property listings with au
 ---
 
 ## 🛠 Tech Stack
-- **Frontend:** EJS, Bootstrap/Tailwind (if added)  
+- **Frontend:** EJS, Bootstrap/Tailwind
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Atlas or local)  
 - **Authentication:** Passport.js (Local + Sessions)  
@@ -28,3 +28,18 @@ The project allows users to create, browse, and manage property listings with au
 ---
 
 ## 📂 Project Structure
+MajorProject/
+│── controllers/        # Route controllers (business logic)
+│── init/               # Database initialization / seed files
+│── models/             # Mongoose models (User, Listing, etc.)
+│── public/             # Static assets (CSS, JS, images)
+│── routes/             # Express route handlers
+│── uploads/            # Temporary uploads before Cloudinary
+│── utils/              # Utility functions (Cloudinary config, helpers)
+│── views/              # EJS templates
+│── app.js              # Main server entry point
+│── cloudConfig.js      # Cloudinary configuration
+│── middleware.js       # Custom middlewares (auth, validation)
+│── schema.js           # Joi validation schemas
+│── .env                # Environment variables
+
